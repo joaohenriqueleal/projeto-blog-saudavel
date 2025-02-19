@@ -138,3 +138,8 @@ nav a:hover {
     color: blue;
 }
 
+section:hover {
+    transform: scale(1.02);
+    transition: .2s;
+}
+
