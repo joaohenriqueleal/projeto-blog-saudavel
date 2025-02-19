@@ -1,3 +1,45 @@
 @charset "UTF_8";
 
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    max-width: 1010px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 300px repeat(1, minmax(100px, auto));
+    grid-template-rows: 300px repeat(1, minmax(100px, auto));
+    grid-template-areas: 
+    "header header header"
+    "nav main main";
+}
+
+.temp {
+    background-color: tomato;
+}
+
+header {
+    max-width:1010px;
+    grid-area: header;
+}
+
+main {
+    max-width: 700px;
+    grid-area: main;
+    display: grid;
+}
+
+nav {
+    max-width: 300px;
+    grid-area: nav;
+}
+
